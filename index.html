@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ EDITAR: título y descripción para buscadores -->
+  <title>Damián Gómez — Sistemas de Salud y Discapacidad</title>
+  <meta name="description" content="Portfolio de Damián Gómez. Automatización de procesos, sistemas de gestión y auditoría para obras sociales y prestadores de salud." />
+
+  <!-- Tipografías: Newsreader (títulos, alternativa libre a Freight Display) + DM Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- ✏️ EDITAR: tu nombre / logo -->
+      <a href="#top" class="logo">Damián Gómez</a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contacto" class="btn btn--khaki btn--sm">Contacto</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" class="btn btn--khaki">Contacto</a>
+    </nav>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ============ HERO (lavanda) ============ -->
+    <section class="section theme-light hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <!-- ✏️ EDITAR -->
+          <h1 class="h2">Damián Gómez</h1>
+          <p class="h4 hero-sub">Desarrollo soluciones tecnológicas para entidades de salud que simplifican la auditoría, las gestiones contables y mejoran la experiencia del usuario.</p>
+          <a href="#proyectos" class="btn btn--pink btn--lg">Ver proyectos 2027</a>
+        </div>
+        <figure class="hero-media reveal reveal--delay">
+          <!-- ✏️ EDITAR: tu foto -->
+          <img src="assets/img/portrait.jpg" alt="Retrato de Damián Gómez" width="800" height="1000" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MI ENFOQUE (crema, split) ============ -->
+    <section class="section theme-white split" id="sobre-mi">
+      <figure class="split-media">
+        <img src="assets/img/approach.jpg" alt="Entorno de trabajo y análisis de sistemas" loading="lazy" />
+      </figure>
+      <div class="split-content">
+        <div class="split-inner">
+          <h2 class="h3 reveal">Mi enfoque</h2>
+
+          <div class="approach-item reveal">
+            <h3 class="h4">Desde adentro del sector</h3>
+            <p>Conozco de primera mano el estrés de los plazos y vencimientos de la SSSalud, los amparos y los biblioratos colapsados en auditoría. Diseño software para resolver problemas reales con los que convivo todos los días.</p>
+          </div>
+
+          <div class="approach-item reveal">
+            <h3 class="h4">Ingeniería y Ciencia de Datos</h3>
+            <p>Combinando mi experiencia en administración de salud con formación en Ciencia de Datos y desarrollo de sistemas, construyo herramientas modulares que despapelizan, automatizan validaciones y previenen errores antes de las presentaciones formales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS (azul noche) ============ -->
+    <section class="section theme-black stats">
+      <div class="container">
+        <ul class="stats-grid">
+          <li class="stat reveal">
+            <span class="badge" aria-hidden="true">
+              <!-- icono cursor -->
+              <svg viewBox="0 0 24 24"><path d="M5 3l14 7-6 2-2 6z"/></svg>
+            </span>
+            <h3 class="h5">+6 años de experiencia</h3>
+            <p class="small">Especializado en discapacidad y Mecanismo de Integración (SURGE)</p>
+          </li>
+          <li class="stat reveal reveal--delay">
+            <span class="badge" aria-hidden="true">
+              <!-- icono código / engranaje -->
+              <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            </span>
+            <h3 class="h5">Desarrollo a medida</h3>
+            <p class="small">Automatizaciones inteligentes y portales web de autogestion para afiliados</p>
+          </li>
+          <li class="stat reveal reveal--delay2">
+            <span class="badge" aria-hidden="true">
+              <!-- icono personas -->
+              <svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="2.5"/><circle cx="16" cy="9" r="2.5"/><path d="M3.5 18c.6-2.8 2.4-4.2 4.5-4.2s3.9 1.4 4.5 4.2M11.5 18c.6-2.8 2.4-4.2 4.5-4.2s3.9 1.4 4.5 4.2"/></svg>
+            </span>
+            <h3 class="h5">Visión de procesos</h3>
+            <p class="small">Enfoque centrado en aliviar la carga operativa y mejorar la experiencia de auditores y prestadores</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CASOS DE ESTUDIO (crema) ============ -->
+    <section class="section theme-white cases" id="proyectos">
+      <div class="container">
+        <h2 class="h1 section-title reveal">Casos de estudio y soluciones</h2>
+
+        <div class="cases-grid" style="margin-top: 1.75rem;">
+          <article class="case-card reveal">
+            <div class="case-card__media">
+              <img src="assets/img/project-3.jpg" alt="Portal Web de Autogestión" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3 class="h4">Portal Web de<br />Autogestión</h3>
+              <p class="small">Canal centralizado para prestadores y afiliados: descarga de instructivos, envío de planillas y consultas de facturas automatizadas por correo.</p>
+              <a href="https://damian-gomez-dev.github.io/portal-autogestion-demo/" class="link" target="_blank" rel="noopener noreferrer">Visualizar demo</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="case-card reveal reveal--delay">
+            <div class="case-card__media">
+              <img src="assets/img/project-2.jpg" alt="Motor de Decodificación Digital de Facturas" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3 class="h4">Carga masiva de <br /> Facturación</h3>
+              <p class="small">Sistema que procesa y carga PDF de forma integral y masiva. Toma PDFs, extrae su códigos QR y texto mediante OCR, cruzando CUIT, CUIL y períodos para generar TXTs listos para la Superintendencia.</p>
+              <a href="https://lector-facturas-qr-discapacidad.streamlit.app" class="link" target="_blank" rel="noopener noreferrer">Probar demo</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="case-card reveal reveal--delay2">
+            <div class="case-card__media">
+              <img src="assets/img/project-1.jpg" alt="Auditoría Predictiva y Validación Previa" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3 class="h4">Auditoría Preventiva<br />SSSalud y AFIP</h3>
+              <p class="small">Herramienta de control anticipado que simula el FTP de la SSSalud, verifica libros IVA y proyecta errores en la presentacion y subsidios antes del cierre para evitar rechazos tardíos.</p>
+              <a href="https://auditoria-preventiva.streamlit.app" class="link" target="_blank" rel="noopener noreferrer">Probar demo</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA / SLIDESHOW (azul noche) ============ -->
+    <section class="section theme-black gallery" aria-roledescription="carrusel" aria-label="Galería de trabajo">
+      <div class="slides">
+        <figure class="slide is-active" aria-label="Diapositiva 1 de 3">
+          <img src="assets/img/gallery-1.jpg" alt="Atención cálida y ágil en centro de salud" loading="lazy" />
+        </figure>
+        <figure class="slide" aria-label="Diapositiva 2 de 3">
+          <img src="assets/img/gallery-2.jpg" alt="Trabajo remoto y reuniones virtuales de seguimiento" loading="lazy" />
+        </figure>
+        <figure class="slide" aria-label="Diapositiva 3 de 3">
+          <img src="assets/img/gallery-3.jpg" alt="Gestión administrativa ordenada y digital en oficina" loading="lazy" />
+        </figure>
+      </div>
+      <div class="gallery-controls">
+        <button class="gallery-btn" data-dir="-1" aria-label="Diapositiva anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="gallery-dots" role="tablist"></div>
+        <button class="gallery-btn" data-dir="1" aria-label="Diapositiva siguiente">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ FILOSOFÍA / IMPACTO OPERATIVO (lavanda) ============ -->
+    <section class="section theme-light testimonials">
+      <div class="container">
+        <h2 class="h3 reveal">El impacto en los costos operativos</h2>
+        <div class="testimonials-grid">
+          <div class="quote reveal">
+            <p class="h4">Cada error en la carga manual de expedientes o en el tipeo de códigos de prestación se traduce en horas de retrabajo, demoras en las auditorías y sobrecostos administrativos evitables.</p>
+            <p class="small" style="margin-top: 1rem; opacity: 0.85;">Optimización de procesos para eliminar la fricción del papel.</p>
+          </div>
+          <div class="quote reveal reveal--delay">
+            <p class="h4">Automatizar las validaciones y el procesamiento de comprobantes reduce drásticamente el margen de error humano, protegiendo los recursos de la entidad y asegurando cierres previsibles.</p>
+            <p class="small" style="margin-top: 1rem; opacity: 0.85;">Eficiencia económica y previsibilidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- divisor ondulado lavanda → rosa -->
+    <div class="wave" style="--wave-top: var(--lavender); --wave-bottom: var(--pink);" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path class="wave-fill" d="M0,0 H1440 V40 C1320,80 1200,80 1080,40 C960,0 840,0 720,40 C600,80 480,80 360,40 C240,0 120,0 0,40 Z"/>
+        <path class="wave-stroke" d="M0,40 C120,0 240,0 360,40 C480,80 600,80 720,40 C840,0 960,0 1080,40 C1200,80 1320,80 1440,40"/>
+      </svg>
+    </div>
+
+    <!-- ============ CONTACTO (rosa) ============ -->
+    <section class="section theme-bright contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-text reveal">
+          <h2 class="h3">Conectemos para el ciclo 2027</h2>
+          <p class="lead">¿Tu obra social o prepaga busca optimizar los circuitos de discapacidad y despapelar la auditoría? Hablemos sobre soluciones a medida.</p>
+          <!-- ✏️ EDITAR: enlace de email -->
+          <a href="mailto:dami__gomez@hotmail.com" class="btn btn--navy btn--lg">Enviar mensaje</a>
+        </div>
+        <figure class="contact-media reveal reveal--delay">
+          <img src="assets/img/contact.jpg" alt="Reunión institucional de acuerdos y contrataciones" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (crema) ============ -->
+    <section class="section theme-white faq" id="faq">
+      <div class="container">
+        <h2 class="h2 faq-title reveal">Preguntas frecuentes</h2>
+        <div class="faq-grid">
+          <figure class="faq-media reveal">
+            <img src="assets/img/faq.jpg" alt="Organización y planificación de proyectos" loading="lazy" />
+          </figure>
+
+          <div class="accordion reveal reveal--delay">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="h5">¿Cómo se integran estas soluciones con sistemas existentes?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Las herramientas están pensadas para acoplarse de forma modular a la operatoria actual de la entidad, permitiendo una adopción progresiva sin fricción para el personal administrativo.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="h5">¿Qué alcance tienen los proyectos para el ciclo 2027?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Ofrecemos desde portales web de autogestión con implementacion inmediata hasta sistemas administrativos completos de implementación modular, enfocados específicamente en el Mecanismo de Integración.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="h5">¿Cómo podemos coordinar una reunión o demo?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Podes ponerte en contacto directo a través de correo electrónico para coordinar un espacio de intercambio enfocado en los requerimientos específicos de tu institución.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (lavanda) ============ -->
+  <footer class="section theme-light site-footer">
+    <div class="container footer-grid footer-grid--4">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo h3">Damián Gómez</a>
+        <p class="small footer-tagline">Sistemas de salud, auditoría y ciencia de datos.</p>
+      </div>
+
+      <nav class="small footer-col" aria-label="Navegación de pie de página">
+        <p class="footer-label">Secciones</p>
+        <a href="#sobre-mi">Sobre mí</a><br />
+        <a href="#proyectos">Proyectos</a><br />
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <!-- ✏️ EDITAR: datos de contacto -->
+      <address class="small footer-col">
+        <p class="footer-label">Contacto</p>
+        CABA, Argentina<br />
+        <a href="https://wa.me/5491123939181" target="_blank" rel="noopener noreferrer">Teléfono</a><br />
+        <a href="mailto:dami__gomez@hotmail.com">Mail</a>
+      </address>
+
+      <div class="small footer-social footer-col">
+        <p class="footer-label">Redes</p>
+        <a href="https://www.linkedin.com/in/damián-gómez-dev/" target="_blank" rel="noopener">LinkedIn</a><br />
+        <a href="https://github.com/damian-gomez-dev" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom footer-bottom--divided small">
+      <span>© <span id="year"></span> Damián Gómez — Buenos Aires, Argentina</span>
+      <a href="#top" class="link">Volver al inicio ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
