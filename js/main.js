@@ -23,8 +23,13 @@
   const header = document.querySelector('.site-header');
   let lastY = window.scrollY;
   window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    const hide = y > lastY && y > 200 && !body.classList.contains('menu-open');
+    const y = Math.max(0, window.scrollY);
+    if (y <= 10 || body.classList.contains('menu-open')) {
+      header.classList.remove('is-hidden');
+      lastY = y;
+      return;
+    }
+    const hide = y > lastY && y > 180;
     header.classList.toggle('is-hidden', hide);
     lastY = y;
   }, { passive: true });
@@ -33,6 +38,7 @@
   document.querySelectorAll('a[href="#top"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
+      if (body.classList.contains('menu-open')) setMenu(false);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       history.replaceState(null, '', '#top');
     });
@@ -106,14 +112,23 @@
       btn.addEventListener('click', () => { go(index + Number(btn.dataset.dir)); restart(); })
     );
 
-    // Swipe en móvil
+    // Swipe en móvil (solo gestos claramente horizontales)
     let startX = null;
-    gallery.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    let startY = null;
+    gallery.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }, { passive: true });
     gallery.addEventListener('touchend', (e) => {
-      if (startX === null) return;
+      if (startX === null || startY === null) return;
       const dx = e.changedTouches[0].clientX - startX;
-      if (Math.abs(dx) > 40) { go(index + (dx < 0 ? 1 : -1)); restart(); }
+      const dy = e.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        go(index + (dx < 0 ? 1 : -1));
+        restart();
+      }
       startX = null;
+      startY = null;
     });
 
     go(0);
